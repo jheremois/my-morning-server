@@ -1,0 +1,19 @@
+
+```sql
+CREATE TABLE playLists(
+	id     VARCHAR(22) NOT NULL PRIMARY KEY,
+	href   VARCHAR(59) NOT NULL,
+	images VARCHAR(64) NOT NULL,
+	name   VARCHAR(22) NOT NULL,
+);
+```
+
+```sql
+CREATE TABLE tasks(
+	id INT(11) NOT NULL AUTO_INCREMENT,
+	task VARCHAR(124) NOT NULL,
+	task_state BOOLEAN,
+	upload_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (id)
+);
+```
